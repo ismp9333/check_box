@@ -53,12 +53,15 @@ input[type=checkbox]:focus {
     }
 </style>
 
-
-<input type="radio" id="html" name="fav_language" value="HTML">
+https://www.sliderrevolution.com/resources/styling-radio-buttons/
+<br>
+<input type="radio" id="html" name="language" value="HTML">
 <label for="html">HTML</label><br>
-<input type="radio" id="css" name="fav_language" value="CSS">
+
+<input type="radio" id="css" name="language" value="CSS">
 <label for="css">CSS</label><br>
-<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+
+<input type="radio" id="javascript" name="language" value="JavaScript">
 <label for="javascript">JavaScript</label>
 <br>
 
@@ -81,8 +84,8 @@ while($count_chkbox <= 5) {
    }
    </script>
 <?php echo $count_chkbox; ?>) 			
- <input type="checkbox" onclick="checkedOnClick<?php echo $count_chkbox; ?>(this);" class="checkoption<?php echo $count_chkbox; ?>" name="hobby[]"   >คิดภาระงาน</td>
- <input type="checkbox" onclick="checkedOnClick<?php echo $count_chkbox; ?>(this);"  class="checkoption<?php echo $count_chkbox; ?>" name="soyny[]"   > ไม่คิดภาระงาน </td> 
- <input type="checkbox" onclick="checkedOnClick<?php echo $count_chkbox; ?>(this);"  class="checkoption<?php echo $count_chkbox; ?>" name="harmony[]"   > ยังไม่แน่ใจ </td>   
+ <input type="checkbox" onclick="checkedOnClick<?php echo $count_chkbox; ?>(this);" id="hobby<?php echo $count_chkbox; ?>" class="checkoption<?php echo $count_chkbox; ?>" name="hobby[]"   >คิดภาระงาน</td>
+ <input type="checkbox" onclick="checkedOnClick<?php echo $count_chkbox; ?>(this);" id="soyny<?php echo $count_chkbox; ?>"  class="checkoption<?php echo $count_chkbox; ?>" name="soyny[]"   > ไม่คิดภาระงาน </td> 
+ <input type="checkbox" onclick="checkedOnClick<?php echo $count_chkbox; ?>(this);" id="harmony<?php echo $count_chkbox; ?>"  class="checkoption<?php echo $count_chkbox; ?>" name="harmony[]"   > ยังไม่แน่ใจ </td>   
  <br>
 <?php $count_chkbox++; } ?>
